@@ -8,59 +8,26 @@ import Foundation
 import Alamofire
 
 class UniversityViewModel: ObservableObject {
-    @Published var universities: [University] = []
-    @Published var isLoading: Bool = false
-    @Published var errorMessage: String? = nil
-
+    @Published var universities = [University]()
+    @Published var isLoading = false
+    @Published var errorMessage: String?
+    
     let apiUrl = "http://universities.hipolabs.com/search?country=United+States"
-    let sampleData = """
-    [
-        {
-            "name": "Marywood University",
-            "domains": ["marywood.edu"],
-            "web_pages": ["http://www.marywood.edu"],
-            "alpha_two_code": "US",
-            "country": "United States",
-            "state-province": null
-        },
-        {
-            "name": "Lindenwood University",
-            "domains": ["lindenwood.edu"],
-            "web_pages": ["http://www.lindenwood.edu/"],
-            "alpha_two_code": "US",
-            "country": "United States",
-            "state-province": null
-        }
-    ]
-    """
-
-
+    
     func fetchUniversities() {
         isLoading = true
         errorMessage = nil
-
-   AF.request(apiUrl).validate().responseDecodable(of: [University].self) { response in
+        
+        AF.request(apiUrl).validate().responseDecodable(of: [University].self) {[weak self] response in
             DispatchQueue.main.async {
-                self.isLoading = false
+                self?.isLoading = false
                 switch response.result {
                 case .success(let data):
-                    self.universities = Array(data.prefix(50)) // Get only the first 50
+                    self?.universities = Array(data.prefix(50)) // Get only the first 50
                 case .failure(let error):
-                    self.errorMessage = "Failed to fetch universities: \(error.localizedDescription)"
+                    self?.errorMessage = "Failed to fetch universities: \(error.localizedDescription)"
                 }
             }
         }
-    /*   DispatchQueue.main.asyncAfter(deadline: .now() + 1) { // Simulating network delay
-            let decoder = JSONDecoder()
-           if let data = self.sampleData.data(using: .utf8),
-                   let universities = try? decoder.decode([University].self, from: data) {
-                    self.universities = universities
-                    self.isLoading = false
-                } else {
-                    self.errorMessage = "Failed to load data"
-                    self.isLoading = false
-                }
-            } 
-        */
     }
 }
