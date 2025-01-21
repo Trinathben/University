@@ -17,6 +17,8 @@
 		05C4F2032D381C0300E91557 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4F2022D381C0300E91557 /* University.swift */; };
 		05C4F2052D381C3400E91557 /* UniversityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4F2042D381C3400E91557 /* UniversityViewModel.swift */; };
 		05C4F2082D3822CF00E91557 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 05C4F2072D3822CF00E91557 /* Alamofire */; };
+		0E4C90032D3F4D9800C15A52 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4C90022D3F4D9800C15A52 /* OHHTTPStubs */; };
+		0E4C90052D3F4D9800C15A52 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4C90042D3F4D9800C15A52 /* OHHTTPStubsSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05C4F2082D3822CF00E91557 /* Alamofire in Frameworks */,
+				0E4C90052D3F4D9800C15A52 /* OHHTTPStubsSwift in Frameworks */,
+				0E4C90032D3F4D9800C15A52 /* OHHTTPStubs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +159,8 @@
 			name = University;
 			packageProductDependencies = (
 				05C4F2072D3822CF00E91557 /* Alamofire */,
+				0E4C90022D3F4D9800C15A52 /* OHHTTPStubs */,
+				0E4C90042D3F4D9800C15A52 /* OHHTTPStubsSwift */,
 			);
 			productName = University;
 			productReference = 05C4F1D52D381BC500E91557 /* University.app */;
@@ -230,6 +236,7 @@
 			mainGroup = 05C4F1CC2D381BC500E91557;
 			packageReferences = (
 				05C4F2062D38229C00E91557 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0E4C90012D3F4D9800C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
 			);
 			productRefGroup = 05C4F1D62D381BC500E91557 /* Products */;
 			projectDirPath = "";
@@ -612,6 +619,14 @@
 				minimumVersion = 5.10.2;
 			};
 		};
+		0E4C90012D3F4D9800C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -619,6 +634,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 05C4F2062D38229C00E91557 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		0E4C90022D3F4D9800C15A52 /* OHHTTPStubs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E4C90012D3F4D9800C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubs;
+		};
+		0E4C90042D3F4D9800C15A52 /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E4C90012D3F4D9800C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

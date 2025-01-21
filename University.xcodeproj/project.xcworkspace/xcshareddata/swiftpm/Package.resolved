@@ -1,4 +1,5 @@
 {
+  "originHash" : "c8d5e2465468a415ca579fcd3f85a832d200e27a1c1f1f4afcbaa731a8dee2b5",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -8,7 +9,16 @@
         "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
         "version" : "5.10.2"
       }
+    },
+    {
+      "identity" : "ohhttpstubs",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AliSoftware/OHHTTPStubs",
+      "state" : {
+        "revision" : "12f19662426d0434d6c330c6974d53e2eb10ecd9",
+        "version" : "9.1.0"
+      }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
