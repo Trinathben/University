@@ -17,6 +17,9 @@
 		05C4F2032D381C0300E91557 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4F2022D381C0300E91557 /* University.swift */; };
 		05C4F2052D381C3400E91557 /* UniversityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4F2042D381C3400E91557 /* UniversityViewModel.swift */; };
 		05C4F2082D3822CF00E91557 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 05C4F2072D3822CF00E91557 /* Alamofire */; };
+		05C4F20B2D3F3C3700E91557 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4F20A2D3F3C3700E91557 /* DIContainer.swift */; };
+		05C4F20E2D3F3C7100E91557 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 05C4F20D2D3F3C7100E91557 /* Swinject */; };
+		05C4F2102D3F3CAD00E91557 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4F20F2D3F3CAD00E91557 /* ApiService.swift */; };
 		0E4C90032D3F4D9800C15A52 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4C90022D3F4D9800C15A52 /* OHHTTPStubs */; };
 		0E4C90052D3F4D9800C15A52 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4C90042D3F4D9800C15A52 /* OHHTTPStubsSwift */; };
 /* End PBXBuildFile section */
@@ -52,6 +55,8 @@
 		05C4F2022D381C0300E91557 /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
 		05C4F2042D381C3400E91557 /* UniversityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityViewModel.swift; sourceTree = "<group>"; };
 		05C4F2092D39632D00E91557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		05C4F20A2D3F3C3700E91557 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		05C4F20F2D3F3CAD00E91557 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05C4F2082D3822CF00E91557 /* Alamofire in Frameworks */,
+				05C4F20E2D3F3C7100E91557 /* Swinject in Frameworks */,
 				0E4C90052D3F4D9800C15A52 /* OHHTTPStubsSwift in Frameworks */,
 				0E4C90032D3F4D9800C15A52 /* OHHTTPStubs in Frameworks */,
 			);
@@ -109,7 +115,9 @@
 				05C4F1D82D381BC500E91557 /* UniversityApp.swift */,
 				05C4F1DA2D381BC500E91557 /* ContentView.swift */,
 				05C4F2022D381C0300E91557 /* University.swift */,
+				05C4F20F2D3F3CAD00E91557 /* ApiService.swift */,
 				05C4F2042D381C3400E91557 /* UniversityViewModel.swift */,
+				05C4F20A2D3F3C3700E91557 /* DIContainer.swift */,
 				05C4F1DC2D381BC700E91557 /* Assets.xcassets */,
 				05C4F1DE2D381BC700E91557 /* Preview Content */,
 			);
@@ -159,6 +167,7 @@
 			name = University;
 			packageProductDependencies = (
 				05C4F2072D3822CF00E91557 /* Alamofire */,
+				05C4F20D2D3F3C7100E91557 /* Swinject */,
 				0E4C90022D3F4D9800C15A52 /* OHHTTPStubs */,
 				0E4C90042D3F4D9800C15A52 /* OHHTTPStubsSwift */,
 			);
@@ -236,6 +245,7 @@
 			mainGroup = 05C4F1CC2D381BC500E91557;
 			packageReferences = (
 				05C4F2062D38229C00E91557 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				05C4F20C2D3F3C7100E91557 /* XCRemoteSwiftPackageReference "Swinject" */,
 				0E4C90012D3F4D9800C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
 			);
 			productRefGroup = 05C4F1D62D381BC500E91557 /* Products */;
@@ -282,6 +292,8 @@
 			files = (
 				05C4F1DB2D381BC500E91557 /* ContentView.swift in Sources */,
 				05C4F1D92D381BC500E91557 /* UniversityApp.swift in Sources */,
+				05C4F2102D3F3CAD00E91557 /* ApiService.swift in Sources */,
+				05C4F20B2D3F3C3700E91557 /* DIContainer.swift in Sources */,
 				05C4F2052D381C3400E91557 /* UniversityViewModel.swift in Sources */,
 				05C4F2032D381C0300E91557 /* University.swift in Sources */,
 			);
@@ -619,6 +631,12 @@
 				minimumVersion = 5.10.2;
 			};
 		};
+		05C4F20C2D3F3C7100E91557 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
 		0E4C90012D3F4D9800C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
@@ -635,6 +653,10 @@
 			package = 05C4F2062D38229C00E91557 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
+		05C4F20D2D3F3C7100E91557 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05C4F20C2D3F3C7100E91557 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		0E4C90022D3F4D9800C15A52 /* OHHTTPStubs */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0E4C90012D3F4D9800C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
