@@ -26,6 +26,7 @@ class UniversityViewModel: ObservableObject {
                 switch result {
                 case .success(let universities):
                     self?.universities = universities
+  
                 case .failure(let error):
                     self?.errorMessage = "Failed to fetch universities: \(error.localizedDescription)"
                 }
