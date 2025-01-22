@@ -4,18 +4,11 @@
 //
 //  Created by Trinath Vikkurthi on 1/15/25.
 //
+
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var viewModel: UniversityViewModel
-
-    init() {
-        if let resolvedViewModel: UniversityViewModel = DIContainer.shared.resolve(UniversityViewModel.self) {
-            _viewModel = StateObject(wrappedValue: resolvedViewModel)
-        } else {
-            fatalError("Dependency injection failed")
-        }
-    }
+    @StateObject private var viewModel = UniversityViewModel()
 
     var body: some View {
         NavigationView {
@@ -39,6 +32,7 @@ struct ContentView: View {
                             }
                         }
                     }
+                    .listStyle(PlainListStyle())
                 }
             }
             .navigationTitle("Universities")
@@ -48,7 +42,6 @@ struct ContentView: View {
         }
     }
 }
-
 #Preview {
     ContentView()
 }
