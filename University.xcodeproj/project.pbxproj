@@ -20,6 +20,11 @@
 		05C4F20B2D3F3C3700E91557 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4F20A2D3F3C3700E91557 /* DIContainer.swift */; };
 		05C4F20E2D3F3C7100E91557 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 05C4F20D2D3F3C7100E91557 /* Swinject */; };
 		05C4F2102D3F3CAD00E91557 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4F20F2D3F3CAD00E91557 /* ApiService.swift */; };
+		0E0735A32D40925B00A2CE6A /* MockApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C90112D40806300C15A52 /* MockApiService.swift */; };
+		0E4C90082D4075D700C15A52 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4C90072D4075D700C15A52 /* OHHTTPStubs */; };
+		0E4C900A2D4075D700C15A52 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4C90092D4075D700C15A52 /* OHHTTPStubsSwift */; };
+		0E4C90142D4080AA00C15A52 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4C90132D4080AA00C15A52 /* OHHTTPStubs */; };
+		0E4C90162D4080AA00C15A52 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4C90152D4080AA00C15A52 /* OHHTTPStubsSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,7 @@
 		05C4F2092D39632D00E91557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		05C4F20A2D3F3C3700E91557 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		05C4F20F2D3F3CAD00E91557 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		0E4C90112D40806300C15A52 /* MockApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05C4F2082D3822CF00E91557 /* Alamofire in Frameworks */,
+				0E4C900A2D4075D700C15A52 /* OHHTTPStubsSwift in Frameworks */,
+				0E4C90082D4075D700C15A52 /* OHHTTPStubs in Frameworks */,
 				05C4F20E2D3F3C7100E91557 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4C90142D4080AA00C15A52 /* OHHTTPStubs in Frameworks */,
+				0E4C90162D4080AA00C15A52 /* OHHTTPStubsSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +141,7 @@
 		05C4F1E82D381BC700E91557 /* UniversityTests */ = {
 			isa = PBXGroup;
 			children = (
+				0E4C90112D40806300C15A52 /* MockApiService.swift */,
 				05C4F1E92D381BC700E91557 /* UniversityTests.swift */,
 			);
 			path = UniversityTests;
@@ -164,6 +175,8 @@
 			packageProductDependencies = (
 				05C4F2072D3822CF00E91557 /* Alamofire */,
 				05C4F20D2D3F3C7100E91557 /* Swinject */,
+				0E4C90072D4075D700C15A52 /* OHHTTPStubs */,
+				0E4C90092D4075D700C15A52 /* OHHTTPStubsSwift */,
 			);
 			productName = University;
 			productReference = 05C4F1D52D381BC500E91557 /* University.app */;
@@ -213,7 +226,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					05C4F1D42D381BC500E91557 = {
 						CreatedOnToolsVersion = 15.1;
@@ -240,6 +253,7 @@
 			packageReferences = (
 				05C4F2062D38229C00E91557 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				05C4F20C2D3F3C7100E91557 /* XCRemoteSwiftPackageReference "Swinject" */,
+				0E4C90062D4075D700C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
 			);
 			productRefGroup = 05C4F1D62D381BC500E91557 /* Products */;
 			projectDirPath = "";
@@ -296,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0735A32D40925B00A2CE6A /* MockApiService.swift in Sources */,
 				05C4F1EA2D381BC700E91557 /* UniversityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"University/Preview Content\"";
+				DEVELOPMENT_TEAM = WL6FU7TC5H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = University/Info.plist;
@@ -481,6 +497,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"University/Preview Content\"";
+				DEVELOPMENT_TEAM = WL6FU7TC5H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = University/Info.plist;
@@ -505,10 +522,10 @@
 		05C4F1FD2D381BC700E91557 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WL6FU7TC5H;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -524,10 +541,10 @@
 		05C4F1FE2D381BC700E91557 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WL6FU7TC5H;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -543,7 +560,6 @@
 		05C4F2002D381BC700E91557 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -560,7 +576,6 @@
 		05C4F2012D381BC700E91557 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -632,6 +647,14 @@
 				minimumVersion = 2.9.1;
 			};
 		};
+		0E4C90062D4075D700C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -644,6 +667,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 05C4F20C2D3F3C7100E91557 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		0E4C90072D4075D700C15A52 /* OHHTTPStubs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E4C90062D4075D700C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubs;
+		};
+		0E4C90092D4075D700C15A52 /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E4C90062D4075D700C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
+		};
+		0E4C90132D4080AA00C15A52 /* OHHTTPStubs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E4C90062D4075D700C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubs;
+		};
+		0E4C90152D4080AA00C15A52 /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E4C90062D4075D700C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
