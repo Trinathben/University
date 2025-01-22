@@ -24,9 +24,6 @@ class UniversityViewModel: ObservableObject {
                 switch response.result {
                 case .success(let data):
                     self?.universities = Array(data.prefix(50)) // Get only the first 50
-                switch result {
-                case .success(let universities):
-                    self?.universities = universities
                 case .failure(let error):
                     self?.errorMessage = "Failed to fetch universities: \(error.localizedDescription)"
                 }
