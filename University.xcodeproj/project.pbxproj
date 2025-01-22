@@ -20,8 +20,6 @@
 		05C4F20B2D3F3C3700E91557 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4F20A2D3F3C3700E91557 /* DIContainer.swift */; };
 		05C4F20E2D3F3C7100E91557 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 05C4F20D2D3F3C7100E91557 /* Swinject */; };
 		05C4F2102D3F3CAD00E91557 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4F20F2D3F3CAD00E91557 /* ApiService.swift */; };
-		0E4C90032D3F4D9800C15A52 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4C90022D3F4D9800C15A52 /* OHHTTPStubs */; };
-		0E4C90052D3F4D9800C15A52 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0E4C90042D3F4D9800C15A52 /* OHHTTPStubsSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +64,6 @@
 			files = (
 				05C4F2082D3822CF00E91557 /* Alamofire in Frameworks */,
 				05C4F20E2D3F3C7100E91557 /* Swinject in Frameworks */,
-				0E4C90052D3F4D9800C15A52 /* OHHTTPStubsSwift in Frameworks */,
-				0E4C90032D3F4D9800C15A52 /* OHHTTPStubs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,8 +164,6 @@
 			packageProductDependencies = (
 				05C4F2072D3822CF00E91557 /* Alamofire */,
 				05C4F20D2D3F3C7100E91557 /* Swinject */,
-				0E4C90022D3F4D9800C15A52 /* OHHTTPStubs */,
-				0E4C90042D3F4D9800C15A52 /* OHHTTPStubsSwift */,
 			);
 			productName = University;
 			productReference = 05C4F1D52D381BC500E91557 /* University.app */;
@@ -246,7 +240,6 @@
 			packageReferences = (
 				05C4F2062D38229C00E91557 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				05C4F20C2D3F3C7100E91557 /* XCRemoteSwiftPackageReference "Swinject" */,
-				0E4C90012D3F4D9800C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
 			);
 			productRefGroup = 05C4F1D62D381BC500E91557 /* Products */;
 			projectDirPath = "";
@@ -637,12 +630,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.9.1;
-		0E4C90012D3F4D9800C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -657,15 +644,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 05C4F20C2D3F3C7100E91557 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
-		0E4C90022D3F4D9800C15A52 /* OHHTTPStubs */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E4C90012D3F4D9800C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
-			productName = OHHTTPStubs;
-		};
-		0E4C90042D3F4D9800C15A52 /* OHHTTPStubsSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E4C90012D3F4D9800C15A52 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
-			productName = OHHTTPStubsSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
